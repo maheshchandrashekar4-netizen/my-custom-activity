@@ -17,7 +17,7 @@
       "outArguments": [
         { "subscriberDetails": { "type": "object" } }
       ],
-      "url": "https://YOUR_PUBLIC_DOMAIN/execute",
+      "url": "https://my-custom-activity.onrender.com/execute",
       "verb": "POST",
       "body": "",
       "header": "",
@@ -33,7 +33,7 @@
   },
   "userInterfaces": {
     "configModal": {
-      "url": "https://YOUR_PUBLIC_DOMAIN/index.html",
+      "url": "https://my-custom-activity.onrender.com/index.html",
       "height": 500,
       "width": 600
     }
