@@ -1,0 +1,51 @@
+{
+  "workflowApiVersion": "1.1",
+  "metaData": {
+    "icon": "images/icon.png",
+    "category": "customer"
+  },
+  "type": "REST",
+  "lang": {
+    "en-US": {
+      "name": "Fetch Subscriber from External SFMC",
+      "description": "Fetches subscriber data from a different SFMC instance."
+    }
+  },
+  "arguments": {
+    "execute": {
+      "inArguments": [],
+      "outArguments": [
+        { "subscriberDetails": { "type": "object" } }
+      ],
+      "url": "https://YOUR_PUBLIC_DOMAIN/execute",
+      "verb": "POST",
+      "body": "",
+      "header": "",
+      "format": "json",
+      "timeout": 10000,
+      "retryCount": 3,
+      "retryDelay": 1000,
+      "useJwt": false
+    }
+  },
+  "configurationArguments": {
+    "applicationExtensionKey": "your-unique-app-key"
+  },
+  "userInterfaces": {
+    "configModal": {
+      "url": "https://YOUR_PUBLIC_DOMAIN/index.html",
+      "height": 500,
+      "width": 600
+    }
+  },
+  "schema": {
+    "arguments": {
+      "execute": {
+        "inArguments": [{}],
+        "outArguments": [
+          { "subscriberDetails": { "type": "object" } }
+        ]
+      }
+    }
+  }
+}
